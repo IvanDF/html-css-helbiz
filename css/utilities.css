@@ -3,6 +3,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* POSITION */
+.pos-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* ANIMATION */
 .animation {
   transition: all ease-in .5s;
@@ -20,6 +28,10 @@ body {
 
 .txt-center{
   text-align: center;
+}
+
+.vert-mdl {
+  vertical-align: middle;
 }
 
 /* TYPOGRAPHY */

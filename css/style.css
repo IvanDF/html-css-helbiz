@@ -87,10 +87,6 @@ h1 {
 .jumbotron-txt {
   width: 100%;
   padding: 0 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* MAIN */
@@ -130,6 +126,11 @@ h1 {
   display: inline-block;
 }
 
+.how-work-content {
+  margin-top: 460px;
+  padding: 0 20px;
+}
+
 .how-work-content:nth-child(3) .how-work-txt {
   padding-top: 20px;
 }
@@ -140,6 +141,60 @@ h1 {
 
 .how-work-txt small {
   margin: 0;
+}
+
+/* DRIVE */
+.drive a {
+  color: #fff;
+}
+.drive .app a {
+  color: #000;
+}
+
+.mobility,
+.app,
+.cities {
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+  color: #fff;
+  height: 400px;
+}
+
+.mobility {
+  background: url('../img/main/drive/scooter-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.mobility-txt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.app {
+  color: #000;
+  background: url("../img/main/drive/helbiz-app.png") no-repeat center 100px, linear-gradient(#405569, #252f38);
+  background-size: cover;
+}
+
+.cities {
+  background: url('../img/main/drive/cities.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.app-txt.pos-center,
+.cities-txt.pos-center {
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.mobility-box p,
+.app-box p,
+.cities-box p{
+  padding: 20px 0;
 }
 
 
@@ -171,22 +226,35 @@ h1 {
   }
 
   /* HOW WORK */
+  .how-work-bg {
+    height: 300px;;
+  }
 
   .how-work-content {
-    margin-top: 80px;
+    margin-top: 460px;
     padding: 0 20px;
   }
+
 
   .phone img {
     max-height: 800px;
     width: 100%;
     position: relative;
-    top: 0;
+    top: 100px;
     left: 0;
-    transform: translateY(-50%);
+    margin-bottom: 80px;
   }
 
   /* DRIVE */
+  .drive {
+    margin: 60px 0;
+  }
+
+  .mobility-box h2,
+  .app-box h2,
+  .cities-box h2 {
+    font-size: 28px
+  }
 
 
 
@@ -228,5 +296,17 @@ h1 {
   }
 
   /* HOW WORK */
+  .how-work-bg {
+    height: 400px;;
+  }
+
+  /* DRIVE */
+  .mobility-box h2,
+  .app-box h2,
+  .cities-box h2 {
+    font-size: 32px
+  }
+
+
 
 }
