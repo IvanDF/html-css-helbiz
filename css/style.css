@@ -27,6 +27,7 @@ h1 {
 /* HEADER */
 .navbar {
   font-size: 14px;
+  text-transform: uppercase;
   width: 100%;
   padding: 0 20px;
   position: fixed;
@@ -90,9 +91,16 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-
-
 /* MAIN */
+
+.product {
+  background: #fafafa;
+}
+
+.product img {
+  max-height: 350px;
+}
+
 
 
 /* FOOTER */
