@@ -171,26 +171,23 @@ h1 {
   }
 
   /* HOW WORK */
-  .how-work-bg {
-    height: 300px;
-  }
 
   .how-work-content {
     margin-top: 80px;
     padding: 0 20px;
   }
 
-  .phone {
-    position: relative;
-  }
   .phone img {
     max-height: 800px;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     transform: translateY(-50%);
   }
+
+  /* DRIVE */
+
 
 
 }
@@ -231,8 +228,5 @@ h1 {
   }
 
   /* HOW WORK */
-  .how-work-bg {
-    height: 400px;
-  }
 
 }
