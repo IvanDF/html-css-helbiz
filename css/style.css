@@ -152,6 +152,9 @@ a {
 }
 
 /* DRIVE */
+.drive {
+  margin: 0 15px;
+}
 
 .mobility-box,
 .app-box,
@@ -195,7 +198,7 @@ a {
 }
 
 .app-box {
-  background: url("../img/main/drive/helbiz-app.png") no-repeat center 100px, linear-gradient(#405569, #252f38);
+  background: url("../img/main/drive/helbiz-app.png") no-repeat center 110px, linear-gradient(#405569, #252f38);
   background-size: cover;
 }
 
@@ -230,6 +233,7 @@ a {
 }
 
 .social-box a {
+  color: #000;
   font-size: 24px;
   padding-right: 30px;
 }
@@ -241,7 +245,7 @@ a {
 /* FOOTER */
 
 .footer {
-  margin-top: 20px;
+  margin-top: 30px;
   background: #000;
   color: #fff;
   padding: 60px 20px;
@@ -254,6 +258,7 @@ a {
 }
 
 .footer h4 {
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
@@ -262,7 +267,7 @@ a {
 }
 
 .footer-menu img {
-  padding-top: 15px;
+  padding: 15px 0 40px 0;
 }
 
 .footer-menu li a {
@@ -277,7 +282,6 @@ a {
 .footer-info a {
   display: inline-block;
   padding: 20px 0;
-  font-size: 14px
 }
 
 .footer-info a i {
@@ -290,7 +294,7 @@ a {
 }
 
 .footer-app-box img {
-  margin: 10px 5px;
+  margin: 10px 5px 20px;
   border: solid 1px #fff;
   border-radius: 10px
 }
@@ -340,7 +344,7 @@ a {
 
   /* DRIVE */
   .drive {
-    margin: 60px 0;
+    margin: 60px 0 15px;
   }
 
   .app-box {
@@ -370,8 +374,14 @@ a {
   /* FOOTER */
 
   .footer-menu,
-  .footer-info  {
+  .footer-info {
     text-align: left;
+  }
+
+  .footer-app-box img {
+    margin: 10px 5px;
+    border: solid 1px #fff;
+    border-radius: 10px
   }
 
 }
