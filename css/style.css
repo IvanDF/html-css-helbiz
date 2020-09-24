@@ -13,6 +13,17 @@ body {
   width: 950px;
 }
 
+/* TYPOGRAPHY */
+
+small {
+  display: block;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 30px
+}
+
 /* HEADER */
 .navbar {
   font-size: 14px;
@@ -58,6 +69,27 @@ body {
   display: none;
 }
 
+/* JUMBOTRON */
+
+.jumbotron {
+  position: relative;
+  height: 550px;
+  background: url('../img/header/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin-top: 80px;
+}
+
+.jumbotron-txt {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 
 /* MAIN */
@@ -73,6 +105,12 @@ body {
 
   /* GENERAL SETTINGS */
 
+  /* TYPOGRAPHY */
+
+  h1 {
+    font-size: 48px
+  }
+
 
   /* HEADER */
 
@@ -87,6 +125,7 @@ body {
 
   /* HEADER */
 
+  /* HAMBURGER MENU */
   .hamburger-menu {
     display: none;
   }
@@ -96,6 +135,7 @@ body {
     display: inline-block;
   }
 
+  /* NAVBAR */
   .navbar-menu > .navbar-list .navbar-item {
     padding: 0 8px;
   }
