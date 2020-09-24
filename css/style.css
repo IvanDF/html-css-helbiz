@@ -197,6 +197,31 @@ h1 {
   padding: 20px 0;
 }
 
+/* SOCIAL */
+
+.social {
+  position: relative;
+  height: 400px;
+  background: url("../img/main/social/social-banner.jpg");
+}
+
+.social-box {
+  color: #000;
+  background: #fff;
+  padding: 50px;
+}
+.social-box h3 {
+  font-size: 32px;
+}
+.social-box a {
+  font-size: 28px;
+  padding-right: 35px;
+}
+
+.social-box .h-menu:last-child a {
+  padding-right: 0;
+}
+
 
 /* FOOTER */
 
