@@ -117,17 +117,12 @@ h1 {
   background-position: center left;
 }
 
-.how-work-content {
-  margin-top: 40px;
-  padding: 0 20px;
-}
-
 .how-work-txt {
   display: inline-block;
 }
 
 .how-work-content {
-  margin-top: 460px;
+  margin-top: 450px;
   padding: 0 20px;
 }
 
@@ -147,13 +142,12 @@ h1 {
 .drive a {
   color: #fff;
 }
-.drive .app a {
-  color: #000;
+.drive .drive-content {
 }
 
-.mobility,
-.app,
-.cities {
+.mobility-box,
+.app-box,
+.cities-box {
   position: relative;
   margin: 20px 0;
   padding: 20px;
@@ -161,12 +155,9 @@ h1 {
   height: 400px;
 }
 
-.app,
-.cities {
-  padding: 0 20px;
-}
 
-.mobility {
+.mobility-box {
+  margin-top: 50px;
   background: url('../img/main/drive/scooter-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -178,13 +169,13 @@ h1 {
   transform: translateY(-50%);
 }
 
-.app {
-  color: #000;
+.app-box {
+  margin-right: 10px;
   background: url("../img/main/drive/helbiz-app.png") no-repeat center 100px, linear-gradient(#405569, #252f38);
   background-size: cover;
 }
 
-.cities {
+.cities-box {
   background: url('../img/main/drive/cities.jpg');
   background-size: cover;
   background-position: center;
