@@ -114,7 +114,7 @@ h1 {
   height: 400px;
   background: url('../img/main/how/helbiz-banner.jpg');
   background-size: cover;
-  background-position:left center;
+  background-position: center left;
 }
 
 .how-work-content {
@@ -232,9 +232,10 @@ h1 {
 /* FOOTER */
 
 .footer {
+  margin-top: 20px;
   background: #000;
   color: #fff;
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 .footer-menu,
@@ -251,9 +252,17 @@ h1 {
   padding: 10px 0;
 }
 
+.footer-menu img {
+  padding-top: 15px;
+}
+
 .footer-menu li a {
   color: gray;
   padding: 15px 0;
+}
+
+.footer-info {
+  padding-top: 20px;
 }
 
 .footer-info a {
@@ -312,12 +321,12 @@ h1 {
   }
 
   .how-work-content {
-    margin-top: 460px;
-    padding: 0 20px;
+    margin-top: 350px;
+    padding: 0;
   }
 
 
-  .phone img {
+  .how-work .phone img {
     max-height: 800px;
     width: 100%;
     position: relative;
@@ -394,7 +403,12 @@ h1 {
 
   /* HOW WORK */
   .how-work-bg {
-    height: 400px;;
+    height: 400px;
+  }
+
+  .how-work-content {
+    margin-top: 450px;
+    padding: 0;
   }
 
   /* DRIVE */
@@ -404,6 +418,23 @@ h1 {
     font-size: 32px
   }
 
+}
+
+@media screen and (min-width: 1300px) {
+
+  /* HOW WORK */
+  .how-work-bg {
+    height: 480px;
+  }
+
+  .how-work-content {
+    margin-top: 580px;
+    padding: 0;
+  }
+
+  .how-work .phone img {
+    top: 150px;
+  }
 
 
 }
