@@ -95,23 +95,52 @@ h1 {
 
 /* MAIN */
 
+/* PRODUCTS */
+
 .product {
-  margin-top: 40px;
+  margin: 40px 0;
   padding: 20px;
   background: #fafafa;
 }
 .product h3 {
   margin-bottom: 10px;
 }
-
 .product a {
   color: blue;
 }
-
 .product img {
   max-height: 350px;
 }
 
+/* HOW WORK */
+
+.how-work-bg {
+  height: 400px;
+  background: url('../img/main/how/helbiz-banner.jpg');
+  background-size: cover;
+  background-position:left center;
+}
+
+.how-work-content {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.how-work-txt {
+  display: inline-block;
+}
+
+.how-work-content:nth-child(3) .how-work-txt {
+  padding-top: 20px;
+}
+
+.how-work-txt h4 {
+  font-size: 16px
+}
+
+.how-work-txt small {
+  margin: 0;
+}
 
 
 /* FOOTER */
@@ -123,7 +152,6 @@ h1 {
 @media screen and (min-width: 768px) {
 
   /* GENERAL SETTINGS */
-
   /* TYPOGRAPHY */
 
   h1 {
@@ -140,6 +168,28 @@ h1 {
   }
   .section-product .product-box:nth-child(2) .product {
     margin-right:0;
+  }
+
+  /* HOW WORK */
+  .how-work-bg {
+    height: 300px;
+  }
+
+  .how-work-content {
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+
+  .phone {
+    position: relative;
+  }
+  .phone img {
+    max-height: 800px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
   }
 
 
@@ -178,6 +228,11 @@ h1 {
   }
   .navbar-lang > .navbar-list:nth-child(3) .navbar-item:last-child {
     border: none
+  }
+
+  /* HOW WORK */
+  .how-work-bg {
+    height: 400px;
   }
 
 }
