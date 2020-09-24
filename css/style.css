@@ -6,9 +6,25 @@ body {
 }
 
 /* HEADER */
+.navbar {
+  line-height: 80px
+}
+
 
 
 /* MAIN */
 
 
 /* FOOTER */
+
+
+/* MEDIA QUERY */
+/* TABLET VERSION */
+@media screen and (min-width: 768px) {
+
+}
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 992px) {
+
+}
