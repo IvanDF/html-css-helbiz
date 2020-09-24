@@ -142,19 +142,15 @@ h1 {
 .drive a {
   color: #fff;
 }
-.drive .drive-content {
-}
 
 .mobility-box,
 .app-box,
 .cities-box {
   position: relative;
-  margin: 20px 0;
-  padding: 20px;
+  margin: 15px 0;
   color: #fff;
   height: 400px;
 }
-
 
 .mobility-box {
   margin-top: 50px;
@@ -169,8 +165,26 @@ h1 {
   transform: translateY(-50%);
 }
 
+.app-box h3,
+.cities-box h3 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.mobility-box p {
+  padding: 20px 0;
+}
+
+.app-box p,
+.cities-box p {
+  padding: 10px 0;
+}
+
+.app-box a {
+  padding: 0 10px;
+}
+
 .app-box {
-  margin-right: 10px;
   background: url("../img/main/drive/helbiz-app.png") no-repeat center 100px, linear-gradient(#405569, #252f38);
   background-size: cover;
 }
@@ -185,12 +199,6 @@ h1 {
 .cities-txt.pos-center {
   top: 0;
   transform: translate(-50%, 0);
-}
-
-.mobility-box p,
-.app-box p,
-.cities-box p{
-  padding: 20px 0;
 }
 
 /* SOCIAL */
@@ -329,6 +337,14 @@ h1 {
   /* DRIVE */
   .drive {
     margin: 60px 0;
+  }
+
+  .app-box {
+    margin-right: 15px;
+  }
+
+  .cities-box {
+    margin-left: 15px;
   }
 
   .mobility-box h2,
