@@ -11,12 +11,17 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.vertical-mdl {
+  vertical-align: middle;
+}
+
+
 /* ANIMATION */
 .animation {
   transition: all ease-in .5s;
 }
 
-/* TEXT ALIGN */
+/* TEXT SETTINGS */
 
 .txt-left{
   text-align: left;
@@ -30,8 +35,8 @@ body {
   text-align: center;
 }
 
-.vertical-mdl {
-  vertical-align: middle;
+.txt-upper {
+  text-transform: uppercase;
 }
 
 /* TYPOGRAPHY */
@@ -64,6 +69,27 @@ h6 {
 
 
 /* MENU */
+
+.menu-highlights li {
+  position: relative;
+}
+
+.menu-highlights a::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: 0;   /* INSERIRE DISTANZA LINE-HEIGHT */
+  background: black;
+  transition: width .5s;
+}
+
+.menu-highlights a:hover::after {
+  position: absolute;
+  width: 100%;
+}
 
 .h-menu {
   display: inline-block;

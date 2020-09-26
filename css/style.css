@@ -17,8 +17,13 @@ body {
 /* TYPOGRAPHY */
 
 small {
+  font-size: 16px;
   display: block;
-  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 h1 {
@@ -34,7 +39,6 @@ a {
 .navbar {
   background: #fff;
   font-size: 14px;
-  text-transform: uppercase;
   width: 100%;
   padding: 0 20px;
   position: fixed;
@@ -49,9 +53,45 @@ a {
   color: #000;
 }
 
+/* ANIMATION */
+
+.menu-highlights a::after {
+  left: 5%;
+  height: 5px;
+  bottom: 29px;   /* INSERIRE DISTANZA LINE-HEIGHT */
+  background: rgba(100, 100, 100, .3);
+  transition: width .3s .5s,
+              height .5s,
+              border-radius .5s
+}
+
+.menu-highlights a:hover::after {
+  width: 90%;
+  height: 20px;
+  border-radius: 5px;
+  transition: width .3s,
+              height .5s .5s,
+              border-radius .5s .5s
+}
+
+.navbar-lang.menu-highlights li a:first-child::after {
+  left: 14%;
+  height: 3px;
+  bottom: 29px;   /* INSERIRE DISTANZA LINE-HEIGHT */
+  background: linear-gradient(rgba(100, 100, 200, .3));
+  transition: width .3s .5s,
+}
+
+.navbar-lang.menu-highlights a:first-child:hover::after {
+  width: 70%;
+  border-radius: 0;
+  transition: width .3s,
+}
+
 /* HAMBURGER MENU AND ANIMATION */
 
 .hamburger-menu {
+  position: relative;
   display: inline-block;
 }
 
@@ -99,6 +139,10 @@ a {
   padding: 0 20px;
 }
 
+.jumbotron-txt small {
+  margin: 20px 0;
+}
+
 /* MAIN */
 
 /* PRODUCTS */
@@ -109,8 +153,8 @@ a {
   background: #fafafa;
 }
 
-.product h3 {
-  margin-bottom: 10px;
+.product h3 span {
+  font-weight: 300
 }
 
 .product a {
@@ -184,21 +228,12 @@ a {
   padding-top: 20px;
 }
 
-.mobility-box p {
-  padding: 20px 0;
-}
-
-.app-box p,
-.cities-box p {
-  padding: 10px 0;
-}
-
 .app-box a {
   padding: 0 10px;
 }
 
 .app-box {
-  background: url("../img/main/drive/helbiz-app.png") no-repeat center 110px, linear-gradient(#405569, #252f38);
+  background: url("../img/main/drive/helbiz-app.png") no-repeat center 130px, linear-gradient(#405569, #252f38);
   background-size: cover;
 }
 
@@ -212,6 +247,7 @@ a {
 .cities-txt.pos-center {
   top: 0;
   transform: translate(-50%, 0);
+  width: 100%;
 }
 
 /* SOCIAL */
