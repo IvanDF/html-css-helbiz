@@ -15,12 +15,6 @@ body {
   vertical-align: middle;
 }
 
-
-/* ANIMATION */
-.animation {
-  transition: all ease-in .5s;
-}
-
 /* TEXT SETTINGS */
 
 .txt-left{
