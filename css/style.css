@@ -27,7 +27,7 @@ p {
 }
 
 h1 {
-  font-size: 30px
+  font-size: 30px;
 }
 
 a {
@@ -51,15 +51,13 @@ a {
 }
 
 @keyframes nav-enter {
-
   from {
-    top: -80px
+    top: -80px;
   }
 
   to {
-    top: 0
+    top: 0;
   }
-
 }
 
 .navbar a {
@@ -71,34 +69,30 @@ a {
 .menu-highlights a::after {
   left: 5%;
   height: 5px;
-  bottom: 30px;   /* INSERIRE DISTANZA LINE-HEIGHT */
-  background: rgba(150, 180, 180, .4);
-  transition: width .3s .5s,
-              height .5s,
-              border-radius .5s
+  bottom: 30px; /* INSERIRE DISTANZA LINE-HEIGHT */
+  background: rgba(150, 180, 180, 0.4);
+  transition: width 0.3s 0.5s, height 0.5s, border-radius 0.5s;
 }
 
 .menu-highlights a:hover::after {
   width: 90%;
   height: 20px;
   border-radius: 5px;
-  transition: width .3s,
-              height .5s .5s,
-              border-radius .5s .5s
+  transition: width 0.3s, height 0.5s 0.5s, border-radius 0.5s 0.5s;
 }
 
 .navbar-lang.menu-highlights li a:first-child::after {
   left: 14%;
   height: 3px;
-  bottom: 29px;   /* INSERIRE DISTANZA LINE-HEIGHT */
-  background: linear-gradient(rgba(100, 100, 200, .3));
-  transition: width .3s .5s,
+  bottom: 29px; /* INSERIRE DISTANZA LINE-HEIGHT */
+  background: linear-gradient(rgba(100, 100, 200, 0.3));
+  transition: width 0.3s 0.5s;
 }
 
 .navbar-lang.menu-highlights a:first-child:hover::after {
   width: 70%;
   border-radius: 0;
-  transition: width .3s,
+  transition: width 0.3s;
 }
 
 /* HAMBURGER MENU AND ANIMATION */
@@ -135,7 +129,7 @@ a {
 .jumbotron {
   position: relative;
   height: 630px;
-  background: url('../img/header/hero-bg.jpg');
+  background: url("../img/header/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -155,18 +149,16 @@ a {
 /* PRODUCTS */
 .section-product {
   position: relative;
-  animation: product-enter 1.5s forwards
+  animation: product-enter 1.5s forwards;
 }
 @keyframes product-enter {
+  from {
+    top: 80px;
+  }
 
-from {
-  top: 80px
-}
-
-to {
-  top: 0
-}
-
+  to {
+    top: 0;
+  }
 }
 
 .product {
@@ -176,7 +168,7 @@ to {
 }
 
 .product h3 span {
-  font-weight: 300
+  font-weight: 300;
 }
 
 .product a {
@@ -191,7 +183,7 @@ to {
 
 .how-work-bg {
   height: 400px;
-  background: url('../img/main/how/helbiz-banner.jpg');
+  background: url("../img/main/how/helbiz-banner.jpg");
   background-size: cover;
   background-position: center left;
 }
@@ -210,7 +202,7 @@ to {
 }
 
 .how-work-txt h4 {
-  font-size: 16px
+  font-size: 16px;
 }
 
 .how-work-txt small {
@@ -233,7 +225,7 @@ to {
 
 .mobility-box {
   margin-top: 50px;
-  background: url('../img/main/drive/scooter-bg.jpg');
+  background: url("../img/main/drive/scooter-bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -255,12 +247,13 @@ to {
 }
 
 .app-box {
-  background: url("../img/main/drive/helbiz-app.png") no-repeat center 130px, linear-gradient(#405569, #252f38);
+  background: url("../img/main/drive/helbiz-app.png") no-repeat center 130px,
+    linear-gradient(#405569, #252f38);
   background-size: cover;
 }
 
 .cities-box {
-  background: url('../img/main/drive/cities.jpg');
+  background: url("../img/main/drive/cities.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -312,7 +305,7 @@ to {
 .footer-menu,
 .footer-info {
   padding-bottom: 20px;
-  border-bottom: 1px solid gray
+  border-bottom: 1px solid gray;
 }
 
 .footer h4 {
@@ -344,7 +337,7 @@ to {
 
 .footer-info a i {
   padding: 0 5px;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .footer-app-box {
@@ -354,19 +347,18 @@ to {
 .footer-app-box img {
   margin: 10px 5px 20px;
   border: solid 1px #fff;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 /* MEDIA QUERY */
 
 /* TABLET VERSION */
 @media screen and (min-width: 768px) {
-
   /* GENERAL SETTINGS */
   /* TYPOGRAPHY */
 
   h1 {
-    font-size: 48px
+    font-size: 48px;
   }
 
   /* HAMBURGER MENU */
@@ -380,15 +372,10 @@ to {
     border-radius: 30px;
     height: 5px;
     width: 35px;
-    margin-top: 0;
-    background: #000;
-    transition: margin .5s;
-  }
-
-  .hamburger-menu:hover span {
     margin-top: 5px;
+    background: #000;
+    transition: margin 0.5s;
   }
-
 
   /* MAIN */
 
@@ -399,12 +386,12 @@ to {
     background: #fafafa;
   }
   .section-product .product-box:nth-child(2) .product {
-    margin-right:0;
+    margin-right: 0;
   }
 
   /* HOW WORK */
   .how-work-bg {
-    height: 300px;;
+    height: 300px;
   }
 
   .how-work-content {
@@ -437,7 +424,7 @@ to {
   .mobility-box h2,
   .app-box h2,
   .cities-box h2 {
-    font-size: 28px
+    font-size: 28px;
   }
 
   /* SOCIAL */
@@ -460,14 +447,12 @@ to {
   .footer-app-box img {
     margin: 10px 5px;
     border: solid 1px #fff;
-    border-radius: 10px
+    border-radius: 10px;
   }
-
 }
 
 /* DESKTOP VERSION */
 @media screen and (min-width: 992px) {
-
   /* HEADER */
 
   /* HAMBURGER MENU */
@@ -475,9 +460,9 @@ to {
     display: none;
   }
 
-.navbar-top {
-  display: block;
-}
+  .navbar-top {
+    display: block;
+  }
   .navbar-menu,
   .navbar-lang {
     display: inline-block;
@@ -498,7 +483,7 @@ to {
     border-right: solid black 1px;
   }
   .navbar-lang > .navbar-list:nth-child(3) .navbar-item:last-child {
-    border: none
+    border: none;
   }
 
   /* HOW WORK */
@@ -515,15 +500,13 @@ to {
   .mobility-box h2,
   .app-box h2,
   .cities-box h2 {
-    font-size: 32px
+    font-size: 32px;
   }
-
 }
 
 /* OVER DESKTOP */
 
 @media screen and (min-width: 1300px) {
-
   /* HOW WORK */
   .how-work-bg {
     height: 480px;
@@ -537,5 +520,4 @@ to {
   .how-work .phone img {
     top: 150px;
   }
-
 }
